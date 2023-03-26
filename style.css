@@ -1,0 +1,77 @@
+@import url("fonts/stylesheet.css");
+
+header{
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav *{
+    font-family: 'NF Ultra';
+}
+
+nav{
+    display: flex;
+    color: white;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
+    height: 10%;
+}
+
+#logo img{
+    width: 100px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+#logo:nth-child(2){
+    font-size: small;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 60%;
+    margin-right: 10px;
+}
+
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+main *{
+    font-family: 'NF Ultra';
+}
+
+main{
+    display: flex;
+    background: linear-gradient(#000, #383838);
+    color: white;
+    justify-content: center;
+}
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
