@@ -4,62 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="MAN Fanpage to strona poświęcona autobusom marki MAN">
+    <title>MAN Fanpage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
             <nav>
                 <div id="logo">
-                 <img src="logo.png">
+                 <img src="logo.png" alt="logo man">
                  <h1>MAN FANPAGE</h1>
                 </div>
                  <ul>
-                    <li><a>MODELE</a></li>
-                    <li><a>SPECYFIKACJE</a></li>
-                    <li><a>GALERIA</a></li>
-                    <li><a>O MNIE</a></li>
-                    <li><a>KONTAKT</a></li>
+                    <li><a href="#modele">MODELE</a></li>
+                    <li><a href="#specs">SPECYFIKACJE</a></li>
+                    <li><a href="#gallery">GALERIA</a></li>
+                    <li><a href="#aboutme">O MNIE</a></li>
+                    <li><a href="#contact">KONTAKT</a></li>
                  </ul> 
         </nav>
-        <video src="video.mp4" autoplay muted playsinline loop></video>
+        <video src="video.mp4" autoplay muted playsinline loop poster="10E.jpg"></video>
     </header>
         <main>
-            <section>
+            <section id="modele">
                 <h1>MODELE</h1>
                     <article>
-                        <h2 id="elec">ELECTRIC</h2>
+                        <h2 id="categ">ELECTRIC</h2>
                         <div>
-                        <img src="10E.jpg">
+                        <img src="10E.jpg" alt="zdjecie modelu 10E">
+                        <img src="10E.jpg" class="shadow" aria-hidden="true">
                         <p>Lion's City 10E</p>
                         </div>
                         <div>
-                        <img src="12E.jpg">
+                        <img src="12E.jpg" alt="zdjecie modelu 12E">
+                        <img src="12E.jpg" class="shadow" aria-hidden="true">
                         <p>Lion's City 12E</p>
                         </div>
                         <div>
-                        <img src="18E.jpg">
+                        <img src="18E.jpg" alt="zdjecie modelu 18E">
+                        <img src="18E.jpg" class="shadow" aria-hidden="true">
                         <p>Lion's City 18E</p>
                         </div>
                     </article>
                     <article>
-                        <h2 id="elec">EFFICIENT HYBRID</h2>
+                        <h2 id="categ">EFFICIENT HYBRID</h2>
                         <div>
-                        <img src="12.png">
+                        <img src="12.png" alt="zdjecie modelu 12">
+                        <img src="12.png" class="shadow" aria-hidden="true">
                         <p>Lion's City 12</p>
                         </div>
                         <div>
-                        <img src="18.png">
+                        <img src="18.png" alt="zdjecie modelu 18">
+                        <img src="18.png" class="shadow" aria-hidden="true">
                         <p>Lion's City 18</p>
                         </div>
                         <div>
-                        <img src="19.jpg">
-                        <p>Lion's City 12</p>
+                        <img src="19.jpg" alt="zdjecie modelu 19">
+                        <img src="19.jpg" class="shadow" aria-hidden="true">
+                        <p>Lion's City 19</p>
                         </div>
 
                     </article>
             </section>
             
+            <section id="specs">
+                <h1>SPECYFIKACJE</h1>
+                <article>
+                    <table cellspacing="0">
+                        <tr>
+                            <th>MODEL</th>
+                            <th>DLUGOSC</th>
+                            <th>PASAZEROWIE/SIEDZENIA</th>
+                            <th>SILNIK</th>
+                            <th>ZASIEG</th>
+                        </tr>
+                        <tr>
+                            <th>10E</th>
+                            <td>10,6 M</td>
+                            <td>MAKS. 80 PASAZEROW</td>
+                            <td>ELEKTRYCZNY</td>
+                            <td>300KM</td>
+                        </tr>
+                        <tr>
+                            <th>12E</th>
+                            <td>12,2 M</td>
+                            <td>MAKS. 104 PASAZEROW</td>
+                            <td>ELEKTRYCZNY</td>
+                            <td>350KM</td>
+                        </tr>
+                        <tr>
+                            <th>18E</th>
+                            <td>18,1 M</td>
+                            <td>MAKS. 146 PASAZEROW</td>
+                            <td>ELEKTRYCZNY</td>
+                            <td>350KM</td>
+                        </tr>
+                        <tr>
+                            <th>12</th>
+                            <td>12,2 M</td>
+                            <td>37 SIEDZEN</td>
+                            <td>D1556 LOH EURO 6</td>
+                            <td>B/D</td>
+                        </tr>
+                        <tr>
+                            <th>18</th>
+                            <td>18,1 M</td>
+                            <td>49 SIEDZEN</td>
+                            <td>D1556 LOH EURO 6</td>
+                            <td>B/D</td>
+                        </tr>
+                        <tr>
+                            <th>19</th>
+                            <td>18,8 M</td>
+                            <td>53 SIEDZENIA</td>
+                            <td>D1556 LOH EURO 6</td>
+                            <td>B/D</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+            
+            <section id="gallery">
+                <h1>GALERIA</h1>
+                <article>
+                    <img src="interior.jpg" alt="wnetrze lion's city">
+                </article>
+            </section>
+            
+            <section id="aboutme">
+                <h1>O MNIE</h1>
+                <article>
+
+                </article>
+            </section>
         </main>
 </body>
 </html>
