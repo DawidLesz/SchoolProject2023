@@ -10,13 +10,11 @@
 /* Track */
 ::-webkit-scrollbar-track {
     background-color: rgb(0, 0, 0);
-    border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #EEEEEE;
-    border-radius: 10px;
 }
 
 /* Handle on hover */
@@ -77,7 +75,7 @@ ul {
 }
 
 
-video {
+#backgroundimg {
     position: absolute;
     top: 0;
     left: 0;
