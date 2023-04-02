@@ -1,23 +1,47 @@
 @import url("fonts/stylesheet.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
-html{
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #EEEEEE;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+html {
     scroll-behavior: smooth;
 }
-header{
+
+header {
     height: 100vh;
 }
 
-body{
+body {
     margin: 0;
     overflow-x: hidden;
 }
 
-nav *{
+nav * {
     font-family: 'NF Ultra';
 }
 
-nav{
+nav {
     display: flex;
     color: white;
     align-items: center;
@@ -26,12 +50,12 @@ nav{
     height: 10%;
 }
 
-#logo img{
-    width: 100px;
-    height: 60px;
+#logo img {
+    width: 7vw;
+    height: 100%;
 }
 
-#logo{
+#logo {
     display: flex;
     align-items: center;
     width: fit-content;
@@ -39,20 +63,21 @@ nav{
     justify-content: space-evenly;
 }
 
-#logo:nth-child(2){
-    font-size: small;
+#logo h1 {
+    font-size: 2vw;
 }
 
-ul{
+ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
     width: 60%;
     margin-right: 30px;
+    font-size: 1vw;
 }
 
 
-video{
+video {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,11 +87,11 @@ video{
     object-fit: cover;
 }
 
-main *{
+main * {
     font-family: 'NF Ultra';
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     background: linear-gradient(#000, #383838);
@@ -75,30 +100,44 @@ main{
 }
 
 
-section{
+#arrow {
+
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    filter: invert(100%);
+    z-index: 3;
+}
+
+#arrow img {
+    width: 5vw;
+    height: 8vh;
+}
+
+section {
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
 }
 
-hr{
+hr {
     flex-basis: 100%;
     height: 2px;
     background-color: #EEEEEE;
 }
 
-section h1{
+section h1 {
     flex-basis: 100%;
     width: fit-content;
     text-align: center;
     font-size: 70px;
 }
 
-article *{
+article * {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-article{
+article {
     font-size: 35px;
     display: flex;
     flex-wrap: wrap;
@@ -109,85 +148,88 @@ article{
     height: fit-content;
 }
 
-#zdjmod{
+#zdjmod {
     width: 700px;
-    height: 400px;
+    height: 450px;
     border-radius: 20px;
     position: relative;
     z-index: 2;
     transition: all 1s;
 }
 
-#zdjmod:hover{
+#zdjmod:hover {
     transform: scale(1.1);
     transition: all 1s;
 }
 
 
 
-#modele article div{
+#modele article div {
     flex-basis: 30%;
     gap: 10px;
     padding: 3%;
 }
 
-#categ{
+#categ {
     flex-basis: 100%;
     font-size: 50px;
 }
 
-.shadow{
+.shadow {
     position: absolute;
     margin-left: -700px;
     z-index: 1;
     -webkit-filter: blur(40px);
     filter: blur(40px);
     width: 700px;
-    height: 400px;
+    height: 450px;
     border-radius: 20px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-table td,th{
+table td,
+th {
     border: 1px solid white;
     padding: 10px;
 }
 
 
-table tr{
+table tr {
     height: 100px;
 }
 
-table{
+table {
     border: 2px solid white;
     box-shadow: 0px 0px 10px 2px #DEE8F4;
     border-radius: 8px;
 }
 
-#gallery img{
+#gallery img {
     border-radius: 10px;
     border: 5px solid white;
     width: 60vw;
     height: 35vw;
 }
 
-#gallery article{
+#gallery article {
     display: flex;
 }
 
-#specs article{
+#specs article {
     align-self: center;
 }
 
-table tr{
+table tr {
     font-size: 2.5vw;
 }
 
-#aboutme img{
+
+
+#aboutme img {
     width: 30vw;
     height: 100%;
     flex-basis: 30%;
@@ -195,7 +237,7 @@ table tr{
     border-bottom-left-radius: 20px;
 }
 
-#aboutme div{
+#aboutme div {
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -209,24 +251,24 @@ table tr{
     transition: all 1s;
 }
 
-#aboutme div:hover{
+#aboutme div:hover {
     transform: scale(1.05);
     transition: all 1s;
 }
 
-#aboutme p{
+#aboutme p {
     flex-basis: 60%;
     padding: 20px;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3) ;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-form{
+form {
     display: flex;
     flex-wrap: wrap;
     width: 70vw;
@@ -234,48 +276,54 @@ form{
 }
 
 
-#imie{
+#imie {
     flex-basis: 50%;
 }
-#nazwisko{
+
+#nazwisko {
     flex-basis: 50%;
 }
-#email{
+
+#email {
     flex-basis: 100%;
 }
-#tytul{
+
+#tytul {
     flex-basis: 100%;
 }
-#tresc{
+
+#tresc {
     flex-basis: 100%;
 }
-#wyslij{
+
+#wyslij {
     flex-basis: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#wyslij:active{
+#wyslij:active {
     transform: translateY(5px);
 }
 
-form input,textarea{
+form input,
+textarea {
     border-radius: 15px;
     text-align: center;
     margin: 10px;
     border: 5px solid #EEEEEE;
-    background-color: rgb(0, 0, 0,0);
+    background-color: rgb(0, 0, 0, 0);
     color: white;
     font-size: 2vw;
     box-shadow: 0px 0px 10px 2px #DEE8F4;
 }
 
-form input{
+form input {
     height: fit-content;
     padding: 2vh;
 }
 
-form div{
+form div {
     display: flex;
     flex-wrap: nowrap;
     width: 70vw;
