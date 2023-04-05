@@ -44,12 +44,13 @@ header a{
 }
 
 main{
+    margin-top: 2vw;
     background-color: #2D2D2D;
     display: flex;
     min-height: 100vh;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10vw;
     padding-bottom: 20px;
 }
 
