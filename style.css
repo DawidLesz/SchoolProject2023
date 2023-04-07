@@ -31,6 +31,15 @@ html {
     scroll-behavior: smooth;
 }
 
+img{
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 header {
     height: 100vh;
 }
@@ -70,6 +79,9 @@ nav {
     font-size: 2vw;
 }
 
+
+
+
 ul {
     display: flex;
     list-style-type: none;
@@ -81,6 +93,7 @@ ul {
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
+
 
 nav a {
     text-decoration: none;
@@ -363,6 +376,10 @@ form div {
     display: flex;
     flex-wrap: nowrap;
     width: 70vw;
+}
+
+form{
+    margin-bottom: 2vw;
 }
 
 footer {

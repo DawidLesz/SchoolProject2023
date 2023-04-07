@@ -30,30 +30,34 @@ body{
 
 header{
     font-family: 'NF Ultra';
-    background-color: #0F0F0F;
+    background-color: rgb(15, 15, 15,10);
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     height: 5vw;
 }
 
-header a{
-    text-decoration: none;
-    color: white;
-    font-size: 3vw;
-    text-align: center;
+ul{
+    display: flex;
+    gap: 3vw;
+    padding: 0;
+
 }
 
- a {
-    text-decoration: none;
-    color: white;
+ul:last-child{
+    gap: 7vw;
+}
 
+a {
+    text-decoration: none;
+    font-size: 3vw;
+    text-align: center;
     display: inline-block;
     position: relative;
     color: snow;
 }
 
- a::after{
+a::after{
     margin-top: 5vh;
     content: "";
     position: absolute;
@@ -67,27 +71,49 @@ header a{
     transition: transform 0.25s ease-out;
 }
 
- a:hover::after{
+a:hover::after{
     margin-top: 5vh;
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+#selected{
+    text-decoration: underline;
+}
+
+#selected::after{
+    display: none;
 }
 
 main{
     margin-top: 2vw;
     background-color: #2D2D2D;
     display: flex;
-    min-height: 100vh;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10vw;
     padding-bottom: 20px;
 }
 
-main img{
-    margin-top: 20px;
+main div{
+    height: fit-content;
+}
+
+.zdjmod {
     width: 40vw;
-    height: 100%;
+    height: fit-content;
     border-radius: 20px;
-    box-shadow: 0px 0px 40px 3px #DEE8F4;
+    position: relative;
+    z-index: 2;
+}
+
+.shadow {
+    position: absolute;
+    margin-left: -40vw;
+    z-index: 1;
+    -webkit-filter: blur(2vw);
+    filter: blur(2vw);
+    width: 40vw;
+    height: fit-content;
+    border-radius: 20px;
 }
