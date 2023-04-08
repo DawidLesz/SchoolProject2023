@@ -246,12 +246,21 @@ article {
 table td,
 th {
     border: 1px solid white;
-    padding: 10px;
+    padding: 1vw;
+    flex-grow: unset;
 }
 
 
 table tr {
     height: 100px;
+}
+
+table tr:hover {
+    text-decoration: underline;
+}
+
+table tr:first-child:hover{
+    text-decoration: none;
 }
 
 table {

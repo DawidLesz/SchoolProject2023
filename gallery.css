@@ -39,9 +39,9 @@ header{
 
 ul{
     display: flex;
-    gap: 3vw;
+    gap: 2.4vw;
     padding: 0;
-
+    list-style-type: none;
 }
 
 ul:last-child{
@@ -111,8 +111,8 @@ main div{
     position: absolute;
     margin-left: -40vw;
     z-index: 1;
-    -webkit-filter: blur(2vw);
-    filter: blur(2vw);
+    -webkit-filter: blur(6vw);
+    filter: blur(5vw);
     width: 40vw;
     height: fit-content;
     border-radius: 20px;
