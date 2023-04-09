@@ -114,6 +114,6 @@ main div{
     -webkit-filter: blur(6vw);
     filter: blur(5vw);
     width: 40vw;
-    height: fit-content;
+    height: auto;
     border-radius: 20px;
 }
