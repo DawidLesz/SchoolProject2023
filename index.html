@@ -159,13 +159,23 @@
                 <article>
                     <form action="thanks.html">
                         <div>
-                        <input type="text" id="imie" name="nazwisko" placeholder="imię">
-                        <input type="text" id="nazwisko" name="nazwisko" placeholder="nazwisko">
+                        <input type="text" id="imie" name="nazwisko" placeholder="imię" required>
+                        <input type="text" id="nazwisko" name="nazwisko" placeholder="nazwisko" required>
                     </div>
-                        <input type="text" id="email" name="email" placeholder="e-mail">
-                        <input type="text" id="tytul" name="tytul" placeholder="tytuł wiadomości">
-                        <textarea id="tresc" name="tresc" placeholder="treść"></textarea>
-                        <input type="submit" id="wyslij" name="wyslij" value="wyślij" >
+                        <input type="text" id="email" name="email" placeholder="e-mail" required>
+                        <input type="text" id="tytul" name="tytul" placeholder="tytuł wiadomości" required>
+                        <textarea id="tresc" name="tresc" placeholder="treść" required></textarea>
+                    <div id="radio">
+                        <p>Wybierz temat wiadomości: </p>
+                        <input type="radio" id="probtech" name="radio" value="1" required>
+                        <label for="probtech">Problem techniczny</label>
+                        <input type="radio" id="wspolpraca" name="radio" value="2">
+                        <label for="wspolpraca">Współpraca</label>
+                        <input type="radio" id="inne" name="radio" value="3">
+                        <label for="inne">Inne</label>
+                    </div>
+                    <input type="submit" id="wyslij" name="wyslij" value="wyślij">
+
                     </form>
                 </article>
             </section>

@@ -350,6 +350,33 @@ form {
     flex-basis: 100%;
 }
 
+#radio{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    height: 4vw;
+    width: 70vw;
+    align-items: center;
+    border: 5px solid #EEEEEE;
+    box-shadow: 0px 0px 10px 2px #DEE8F4;
+    border-radius: 15px;
+    margin: 10px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+#radio label{
+    font-size: 1.5vw;
+}
+
+#radio p{
+    font-size: 2vw;
+}
+
+#radio input{
+    box-shadow: none;
+}
+
 #wyslij {
     flex-basis: 50%;
     margin-left: auto;
