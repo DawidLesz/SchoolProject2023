@@ -250,6 +250,11 @@ th {
     flex-grow: unset;
 }
 
+table a{
+    text-decoration: none;
+    color: white;
+}
+
 
 table tr {
     height: 100px;

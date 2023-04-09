@@ -96,12 +96,12 @@ main{
 }
 
 main div{
-    height: fit-content;
+    height: auto;
 }
 
 .zdjmod {
     width: 40vw;
-    height: fit-content;
+    height: auto;
     border-radius: 20px;
     position: relative;
     z-index: 2;
