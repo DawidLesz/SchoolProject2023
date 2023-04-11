@@ -198,16 +198,14 @@ article {
     border-radius: 20px;
     position: relative;
     z-index: 2;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .zdjmod:hover {
     transform: scale(1.1);
-    transition: all 1s;
+    transition: all 0.5s;
     opacity: 20%;
 }
-
-
 
 #modele article div {
     flex-basis: 30%;
@@ -231,6 +229,8 @@ article {
     height: auto;
     border-radius: 20px;
 }
+
+
 
 
 
@@ -387,6 +387,10 @@ form {
     transform: translateY(5px);
 }
 
+#wyslij:hover{
+    cursor: pointer;
+}
+
 form input,
 textarea {
     border-radius: 15px;
@@ -403,6 +407,11 @@ form input {
     height: fit-content;
     padding: 2vh;
 }
+form input:focus, textarea:focus{
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
 
 form div {
     display: flex;
